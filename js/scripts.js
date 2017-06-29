@@ -35,9 +35,9 @@
 
 function initMap() {
     var atl = {lat: 33.820, lng: -84.381};
-    var ssa = {lat: 33.884, lng: -84.270};
-    var atlrocks = {lat: 33.811, lng: -84.421};
-    var wallcrawlers = {lat: 33.763, lng: -84.340};
+    var loc1 = {lat: 33.820, lng: -85.381};
+    var loc2 = {lat: 34.820, lng: -84.381};
+    var loc3 = {lat: 34.820, lng: -85.381};
 
     var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 10,
@@ -47,17 +47,17 @@ function initMap() {
     });
     
     var markerA = new google.maps.Marker({
-        position: ssa,
+        position: loc1,
         map: map,
         label: 'A'
     });
     var markerB = new google.maps.Marker({
-        position: atlrocks,
+        position: loc2,
         map: map,
         label: 'B'
     });
     var markerC = new google.maps.Marker({
-        position: wallcrawlers,
+        position: loc3,
         map: map,
         label: 'C'
     });
@@ -65,16 +65,16 @@ function initMap() {
     var infowindow = new google.maps.InfoWindow();
 
     markerA.addListener('click', function() {
-        infowindow.setContent('<strong>Stone Summit Atlanta</strong>');
+        infowindow.setContent('<strong>Climbing Gym</strong>');
         infowindow.open(map, markerA); 
     })
 
     markerB.addListener('click', function() {
-        infowindow.setContent('<strong>Atlanta Rocks!</strong>');
+        infowindow.setContent('<strong>Climbing Gym</strong>');
         infowindow.open(map, markerB); 
     })
     markerC.addListener('click', function() {
-        infowindow.setContent('<strong>Wall Crawler Rock Club</strong>');
+        infowindow.setContent('<strong>Climbing Gym</strong>');
         infowindow.open(map, markerC); 
     })
 
