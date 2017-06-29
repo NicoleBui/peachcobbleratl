@@ -35,9 +35,9 @@
 
 function initMap() {
     var atl = {lat: 33.820, lng: -84.381};
-    var loc1 = {lat: 33.820, lng: -85.381};
-    var loc2 = {lat: 34.820, lng: -84.381};
-    var loc3 = {lat: 34.820, lng: -85.381};
+    var loc1 = {lat: 33.825, lng: -84.381};
+    var loc2 = {lat: 33.815, lng: -84.375};
+    var loc3 = {lat: 33.820, lng: -84.385};
 
     var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 10,
