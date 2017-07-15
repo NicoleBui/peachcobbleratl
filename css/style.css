@@ -30,6 +30,12 @@ h3 {
   text-transform: uppercase;
 }
 
+h4 {
+  font-family: "Karla", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+
 /* Star Horizontal */
 
 hr.star-light,
@@ -41,7 +47,7 @@ hr.star-primary {
   max-width: 250px;
   margin: 25px auto 30px;
 }
-hr.star-light:after,
+hr.star-light
 hr.star-primary:after {
   font-family: 'Glyphicons Halflings'; 
   content: "\e103"; 
@@ -55,7 +61,7 @@ hr.star-light {
   border-color: white;
 }
 hr.star-light:after {
-  background-color: #6ba745;
+  background-color: #383d3b;
   color: white;
 }
 hr.star-primary {
@@ -64,10 +70,6 @@ hr.star-primary {
 hr.star-primary:after {
   background-color: white;
   color: #383d3b;
-}
-section.dark hr.star-light:after {
-  background-color: #383d3b;
-  color: white;
 }
 
 /* Header */
@@ -198,10 +200,6 @@ section h2 {
   margin: 0;
   font-size: 2.5em;
 }
-section.green {
-  background: #6ba745; /*#f46d57;*/
-  color: white;
-}
 section.dark {
   background: #383d3b;
   color: white;
@@ -220,9 +218,20 @@ section.dark {
   }
 }
 
-/* Services */
+/* Get a resole */
 
-.btn-outline {
+#getaresole ul {
+  margin-top: 25px;
+  margin-bottom: 35px;
+  font-size: 20px;
+}
+
+#getaresole h3 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+/*.btn-outline {
   color: white;
   font-size: 20px;
   border: solid 2px white;
@@ -237,21 +246,17 @@ section.dark {
   color: #6ba745;
   background: white;
   border: solid 2px white;
+}*/
+
+/* Shout-Outs */
+
+#shoutouts ul {
+  margin-top: 25px;
+  font-size: 20px;
 }
 
-/* FAQ */
-
-#faq {
-  font-size: 1.25em;
-}
-
-#faq .panel-title {
-  font-size: 1.25em;
-  text-transform: none;
-}
-
-#faq .panel-heading {
-  cursor: pointer;
+#shoutouts li a {
+  font-weight: bold;
 }
 
 /* Locations */
@@ -263,10 +268,32 @@ section.dark {
   padding: 8% 10%;
 }
 
-/* About */
-#about img {
+/* Team */
+
+#team img {
   margin: 0 auto;
-  padding: 8% 10%;
+  padding: 8% 6%;
+  width: 70%;
+}
+
+.team-member {
+  text-align: center;
+}
+
+/* FAQ */
+
+#faq .panel-title {
+  font-size: 20px;
+  text-transform: none;
+}
+
+#faq .panel-heading {
+  cursor: pointer;
+}
+
+#faq .panel-body {
+  color: black;
+  font-size: 20px;
 }
 
 /* Footer */
