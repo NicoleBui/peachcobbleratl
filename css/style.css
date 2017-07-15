@@ -47,7 +47,7 @@ hr.star-primary {
   max-width: 250px;
   margin: 25px auto 30px;
 }
-hr.star-light
+hr.star-light:after,
 hr.star-primary:after {
   font-family: 'Glyphicons Halflings'; 
   content: "\e103"; 
