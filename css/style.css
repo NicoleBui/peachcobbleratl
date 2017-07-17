@@ -13,8 +13,7 @@ p.small {
 a,
 a:hover,
 a:focus,
-a:active,
-a.active {
+a:active {
   color: #f46d57;
   text-decoration: none;
 }
@@ -222,7 +221,6 @@ section.dark {
 
 #getaresole ul {
   margin-top: 25px;
-  margin-bottom: 35px;
   font-size: 20px;
 }
 
@@ -292,7 +290,7 @@ section.dark {
 }
 
 #faq .panel-body {
-  color: black;
+  color: #383d3b;
   font-size: 20px;
 }
 
