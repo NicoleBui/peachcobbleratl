@@ -261,10 +261,15 @@ section.dark {
 
 #locations img {
   width: 100%;
-  max-width: 300px;
+  max-width: 250px;
   margin: 0 auto;
-  padding: 8% 10%;
+  padding: 5% 5%;
 }
+
+/*a {
+
+}
+*/
 
 /* Team */
 
