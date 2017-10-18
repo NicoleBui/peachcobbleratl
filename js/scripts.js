@@ -35,9 +35,9 @@
 
 function initMap() {
     var atl = {lat: 33.820, lng: -84.381};
-    var loc1 = {lat: 33.825, lng: -84.381};
-    var loc2 = {lat: 33.815, lng: -84.375};
-    var loc3 = {lat: 33.820, lng: -84.385};
+    var loc1 = {lat: 33.8110014, lng: -84.4224511};
+    var loc2 = {lat: 33.7625508, lng: -84.3403153};
+    // var loc3 = {lat: 33.820, lng: -84.385};
 
     var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 10,
@@ -56,26 +56,17 @@ function initMap() {
         map: map,
         label: 'B'
     });
-    var markerC = new google.maps.Marker({
-        position: loc3,
-        map: map,
-        label: 'C'
-    });
 
     var infowindow = new google.maps.InfoWindow();
 
     markerA.addListener('click', function() {
-        infowindow.setContent('<strong>Climbing Gym</strong>');
+        infowindow.setContent('<strong>Atlanta Rocks!</strong>');
         infowindow.open(map, markerA); 
     })
 
     markerB.addListener('click', function() {
-        infowindow.setContent('<strong>Climbing Gym</strong>');
+        infowindow.setContent('<strong>Wall Crawler Rock Club</strong>');
         infowindow.open(map, markerB); 
-    })
-    markerC.addListener('click', function() {
-        infowindow.setContent('<strong>Climbing Gym</strong>');
-        infowindow.open(map, markerC); 
     })
 
 }
