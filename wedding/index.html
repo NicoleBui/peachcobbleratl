@@ -8,8 +8,24 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
+<style>
+.nav-pills > li > a, 
+.nav-pills > li > a:hover, 
+.nav-pills > li > a:focus {
+    color: #3E7A2E;
+}
+
+.nav-pills > li.active > a, 
+.nav-pills > li.active > a:hover, 
+.nav-pills > li.active > a:focus {
+    color: white;
+    background-color: #3E7A2E;
+}
+
+</style>
+
 <body style="background-color: #fbfbfb;">
-    <div class="container-fluid">
+    <div class="container-fluid" style="padding-top: 10px;">
         <ul class="nav nav-pills">
             <li class="active"><a data-toggle="pill" href="#english">English</a></li>
             <li><a data-toggle="pill" href="#deutsch">Deutsch</a></li>
