@@ -46,29 +46,38 @@ hr.star-primary {
   max-width: 250px;
   margin: 25px auto 30px;
 }
-hr.star-light:after,
-hr.star-primary:after {
+
+.leaf-light, .leaf-primary {
+  height: 2.5em;
+}
+
+.leaf-light:after,
+.leaf-primary:after {
   font-family: 'Glyphicons Halflings'; 
   content: "\e103"; 
   display: inline-block;
   position: relative;
-  top: -0.8em;
+  top: -1.7em;
   font-size: 2em;
   padding: 0 0.25em;
 }
-hr.star-light {
-  border-color: white;
-}
-hr.star-light:after {
+
+.leaf-light:after {
   background-color: #383d3b;
   color: white;
 }
-hr.star-primary {
-  border-color: #383d3b;
-}
-hr.star-primary:after {
+
+.leaf-primary:after {
   background-color: white;
   color: #383d3b;
+}
+
+
+hr.star-light {
+  border-color: white;
+}
+hr.star-primary {
+  border-color: #383d3b;
 }
 
 /* Header */

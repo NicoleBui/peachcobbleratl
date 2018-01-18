@@ -37,7 +37,7 @@ function initMap() {
     var atl = {lat: 33.820, lng: -84.381};
     var loc1 = {lat: 33.8110014, lng: -84.4224511};
     var loc2 = {lat: 33.7625508, lng: -84.3403153};
-    // var loc3 = {lat: 33.820, lng: -84.385};
+    var loc3 = {lat: 33.8842752, lng: -84.267595};
 
     var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 10,
@@ -57,6 +57,12 @@ function initMap() {
         label: 'B'
     });
 
+    var markerC = new google.maps.Marker({
+        position: loc3,
+        map: map,
+        label: 'C'
+    });
+
     var infowindow = new google.maps.InfoWindow();
 
     markerA.addListener('click', function() {
@@ -67,6 +73,11 @@ function initMap() {
     markerB.addListener('click', function() {
         infowindow.setContent('<strong>Wall Crawler Rock Club</strong>');
         infowindow.open(map, markerB); 
+    })
+
+    markerC.addListener('click', function() {
+        infowindow.setContent('<strong>Coming soon!</strong> <br/>Stone Summit Atlanta');
+        infowindow.open(map, markerC); 
     })
 
 }
