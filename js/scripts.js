@@ -76,7 +76,7 @@ function initMap() {
     })
 
     markerC.addListener('click', function() {
-        infowindow.setContent('<strong>Coming soon!</strong> <br/>Stone Summit Atlanta');
+        infowindow.setContent('<strong>Stone Summit Atlanta</strong>');
         infowindow.open(map, markerC); 
     })
 
