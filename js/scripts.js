@@ -38,6 +38,7 @@ function initMap() {
     var loc1 = {lat: 33.8110014, lng: -84.4224511};
     var loc2 = {lat: 33.7625508, lng: -84.3403153};
     var loc3 = {lat: 33.8842752, lng: -84.267595};
+    var loc4 = {lat: 34.021366, lng: -84.568636};
 
     var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 10,
@@ -63,6 +64,12 @@ function initMap() {
         label: 'C'
     });
 
+    var markerD = new google.maps.Marker({
+        position: loc4,
+        map: map,
+        label: 'D'
+    });
+
     var infowindow = new google.maps.InfoWindow();
 
     markerA.addListener('click', function() {
@@ -78,6 +85,11 @@ function initMap() {
     markerC.addListener('click', function() {
         infowindow.setContent('<strong>Stone Summit Atlanta</strong>');
         infowindow.open(map, markerC); 
+    })
+
+    markerC.addListener('click', function() {
+        infowindow.setContent('<strong>Stone Summit Kennesaw</strong>');
+        infowindow.open(map, markerD); 
     })
 
 }
