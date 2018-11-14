@@ -41,7 +41,7 @@ function initMap() {
     var loc4 = {lat: 34.021366, lng: -84.568636};
 
     var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 10,
+        zoom: 9,
         center: atl,
         scrollwheel:false,
         draggable:false
