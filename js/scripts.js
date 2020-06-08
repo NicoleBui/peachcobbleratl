@@ -61,12 +61,12 @@ function initMap() {
 
     markerA.addListener('click', function() {
         infowindow.setContent('<strong>Stone Summit Atlanta</strong>');
-        infowindow.open(map, markerB); 
+        infowindow.open(map, markerA); 
     })
 
     markerB.addListener('click', function() {
         infowindow.setContent('<strong>Stone Summit Kennesaw</strong>');
-        infowindow.open(map, markerC); 
+        infowindow.open(map, markerB); 
     })
 
 }
