@@ -35,9 +35,8 @@
 
 function initMap() {
     var atl = {lat: 33.820, lng: -84.381};
-    var loc1 = {lat: 33.7625508, lng: -84.3403153};
-    var loc2 = {lat: 33.8842752, lng: -84.267595};
-    var loc3 = {lat: 34.021366, lng: -84.568636};
+    var loc1 = {lat: 33.8842752, lng: -84.267595};
+    var loc2 = {lat: 34.021366, lng: -84.568636};
 
     var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 9,
@@ -51,31 +50,21 @@ function initMap() {
         map: map,
         label: 'A'
     });
+
     var markerB = new google.maps.Marker({
         position: loc2,
         map: map,
         label: 'B'
     });
 
-    var markerC = new google.maps.Marker({
-        position: loc3,
-        map: map,
-        label: 'C'
-    });
-
     var infowindow = new google.maps.InfoWindow();
 
     markerA.addListener('click', function() {
-        infowindow.setContent('<strong>Wall Crawler Rock Club</strong>');
-        infowindow.open(map, markerA); 
-    })
-
-    markerB.addListener('click', function() {
         infowindow.setContent('<strong>Stone Summit Atlanta</strong>');
         infowindow.open(map, markerB); 
     })
 
-    markerC.addListener('click', function() {
+    markerB.addListener('click', function() {
         infowindow.setContent('<strong>Stone Summit Kennesaw</strong>');
         infowindow.open(map, markerC); 
     })
